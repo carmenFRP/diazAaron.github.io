@@ -2,27 +2,11 @@ body{
     margin:0;
     padding: 0;
 }
-
-img,#ciudad1{
+img,#ciudad1,.imgs{
     display: none;
 }
-i:hover{
-    transition: .5s;
-    transform: scale(1.5);
-}
-
-#ciudad1:checked + label{
-    display:block;
-}
-#ciudad1:checked + label > div {
-    display:flex;
-    flex-direction: row;
-}
-#ciudad1:checked + label > div > img{
-    display:block;   
-    width: 200px;
-    height: 270px;
-    object-fit: none;
+img.principal{
+    display: block;
 }
 img.estatica{
     position:absolute;
@@ -33,6 +17,21 @@ img.estatica:hover{
     transition: 1s;
     opacity: 0;
 }
-img.principal{
-    display: flex;
+/*HACER FLECHA GRANDE*/
+label:hover{
+    transition: .5s;
+    transform: scale(1.5);
+}
+.imgs{
+    display: none;
+}
+#ciudad1:checked+.imgs{
+    display:flex;
+    flex-direction: row;
+}
+#ciudad1:checked+.imgs > div > img{
+    display:block;   
+    width: 200px;
+    height: 270px;
+    object-fit: none;
 }
