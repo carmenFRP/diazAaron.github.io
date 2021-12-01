@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+img,#ciudad1{
+    display: none;
+}
+i:hover{
+    transition: .5s;
+    transform: scale(1.5);
+}
+
+#ciudad1:checked + label{
+    display:block;
+}
+#ciudad1:checked + label > div {
+    display:flex;
+    flex-direction: row;
+}
+#ciudad1:checked + label > div > img{
+    display:block;   
+    width: 200px;
+    height: 270px;
+    object-fit: none;
+}
+img.estatica{
+    position:absolute;
+    background: white;
+    filter: grayscale(100%);
+}
+img.estatica:hover{
+    transition: 1s;
+    opacity: 0;
+}
+img.principal{
+    display: flex;
+}
