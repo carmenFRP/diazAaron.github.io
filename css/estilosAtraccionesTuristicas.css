@@ -2,36 +2,165 @@ body{
     margin:0;
     padding: 0;
 }
-img,#ciudad1,.imgs{
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+i{
+    font-size: 4rem;
+}
+i:hover{
+    transition: .5s;
+    transform: scale(1.5);
+}
+/*----------Primera Ciudad------------*/
+#ciudad1{
     display: none;
 }
-img.principal{
-    display: block;
+img.principal1{
+    display: flex;
 }
-img.estatica{
+img.estatica1{
     position:absolute;
     background: white;
     filter: grayscale(100%);
 }
-img.estatica:hover{
+img.estatica1:hover{
     transition: 1s;
     opacity: 0;
 }
-/*HACER FLECHA GRANDE*/
-label:hover{
-    transition: .5s;
-    transform: scale(1.5);
-}
-.imgs{
+.secundaria1{
     display: none;
 }
-#ciudad1:checked+.imgs{
+.principal1{
+    display:flex;
+}
+#ciudad1:checked +.imgs1>.principal1{
+    display:none;
+    animation: ease-out;
+}
+#ciudad1:checked+.imgs1{
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
-#ciudad1:checked+.imgs > div > img{
-    display:block;   
+#ciudad1:checked+.imgs1 > .secundaria1{
+    display: flex;
+}
+#ciudad1:checked+.imgs1 > .secundaria1 > img{
+    display:flex;   
     width: 200px;
     height: 270px;
     object-fit: none;
 }
+.contraer1{
+    display:none;
+}
+#ciudad1:checked~.icono1>label>.expandir1{
+    display: none;
+}
+#ciudad1:checked~.icono1>label>.contraer1{
+    display:flex;
+}
+/*----------Segunda Ciudad------------*/
+#ciudad2{
+    display: none;
+}
+img.principal2{
+    display: flex;
+}
+img.estatica2{
+    position:absolute;
+    background: white;
+    filter: grayscale(100%);
+}
+img.estatica2:hover{
+    transition: 1s;
+    opacity: 0;
+}
+.secundaria2{
+    display: none;
+}
+.principal2{
+    display:flex;
+}
+#ciudad2:checked +.imgs2>.principal2{
+    display:none;
+    animation: ease-out;
+}
+#ciudad2:checked+.imgs2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#ciudad2:checked+.imgs2 > .secundaria2{
+    display: flex;
+}
+#ciudad2:checked+.imgs2 > .secundaria2 > img{
+    display:flex;   
+    width: 200px;
+    height: 270px;
+    object-fit: none;
+}
+.contraer2{
+    display:none;
+}
+#ciudad2:checked~.icono2>label>.expandir2{
+    display: none;
+}
+#ciudad2:checked~.icono2>label>.contraer2{
+    display:flex;
+}
+/*----------Tercera Ciudad------------*/
+#ciudad3{
+    display: none;
+}
+img.principal3{
+    display: flex;
+}
+img.estatica3{
+    position:absolute;
+    background: white;
+    filter: grayscale(100%);
+}
+img.estatica3:hover{
+    transition: 1s;
+    opacity: 0;
+}
+.secundaria3{
+    display: none;
+}
+.principal3{
+    display:flex;
+}
+#ciudad3:checked +.imgs3>.principal3{
+    display:none;
+    animation: ease-out;
+}
+#ciudad3:checked+.imgs3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#ciudad3:checked+.imgs3 > .secundaria3{
+    display: flex;
+}
+#ciudad3:checked+.imgs3 > .secundaria3 > img{
+    display:flex;   
+    width: 200px;
+    height: 270px;
+    object-fit: none;
+}
+.contraer3{
+    display:none;
+}
+#ciudad3:checked~.icono3>label>.expandir3{
+    display: none;
+}
+#ciudad3:checked~.icono3>label>.contraer3{
+    display:flex;
+}
+
+https://cssreference.io/animations/
