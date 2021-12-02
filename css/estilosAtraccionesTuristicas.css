@@ -14,6 +14,7 @@ i{
 i:hover{
     transition: .5s;
     transform: scale(1.5);
+    cursor:pointer;
 }
 /*----------Primera Ciudad------------*/
 #ciudad1{
@@ -58,6 +59,7 @@ img.estatica1:hover{
 .contraer1{
     display:none;
 }
+
 #ciudad1:checked~.icono1>label>.expandir1{
     display: none;
 }
