@@ -38,6 +38,7 @@ img.estatica1:hover{
 .principal1{
     display:flex;
 }
+
 #ciudad1:checked +.imgs1>.principal1{
     display:none;
     animation: ease-out;
@@ -55,6 +56,10 @@ img.estatica1:hover{
     width: 200px;
     height: 270px;
     object-fit: none;
+}
+.secundaria1:hover>img{
+    transform: scaleX(2.4);
+    object-fit: fill !important;
 }
 .contraer1{
     display:none;
