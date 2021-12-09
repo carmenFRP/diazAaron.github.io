@@ -1,0 +1,49 @@
+body
+{
+   
+    margin: 0;
+}
+header
+{
+    max-width: 100vw;
+    min-height: 75vh;
+
+    background: linear-gradient(#68ACE6,white)
+}
+nav{
+    min-height: 5vh;
+    background-color: #E6B567;
+    min-width: 70vw;
+    max-width: 100vw; /*Limita el largo del nav*/
+    text-align: right;
+}
+nav ul{
+    background-color: #E6B567;
+    text-decoration: none;
+    
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    min-width:10vw;
+    text-align:center;
+    color:#fff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+footer 
+{
+    max-width: 100vw;
+    min-height: 25vh;
+    background-color: #366B99;
+    text-align: center;
+}
+
+img:hover
+{
+    transform:scale(0.75);
+    transition: transform .5s ease-in-out;
+}
+
+
