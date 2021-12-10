@@ -7,15 +7,15 @@ header
 {
     max-width: 100vw;
     min-height: 75vh;
-
+    align-content: center;
     background: linear-gradient(#68ACE6,white)
 }
 nav{
     min-height: 5vh;
     background-color: #E6B567;
     min-width: 70vw;
-    max-width: 100vw; /*Limita el largo del nav*/
-    text-align: right;
+    max-width: 100vw; 
+    text-align: center;
 }
 nav ul{
     background-color: #E6B567;
@@ -31,6 +31,10 @@ nav li{
     font-size: 18px;
     margin: 10px;
 }
+li:hover
+{
+    text-decoration:underline;
+}
 
 footer 
 {
@@ -40,10 +44,35 @@ footer
     text-align: center;
 }
 
-img:hover
+footer>img:hover
 {
     transform:scale(0.75);
     transition: transform .5s ease-in-out;
 }
 
+
+
+
+@media (max-width: 768px)
+{
+    nav{
+        text-align: center;
+    }
+    nav ul {
+        margin:0px;
+        padding-top: 1vh;
+    }
+    nav li{
+        margin: 0px;
+        font-size: 16px;
+        width: 14vw;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+    
+    
+}
 
