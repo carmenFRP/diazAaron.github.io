@@ -1,68 +1,643 @@
 body{
     margin:0;
     padding: 0;
+    background-color: #8CC9FF;
+    font-family: 'Roboto', sans-serif;
 }
-article{
+article>div{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    min-height: 33vh;
 }
 i{
     font-size: 4rem;
+    color: #996D26;
 }
 i:hover{
     transition: .5s;
     transform: scale(1.5);
-    cursor:pointer;
+    cursor: pointer;
 }
-/*------Primer País-------*/
-#pais1{
+input{
     display: none;
 }
-img.principal1{
-    display: flex;
+.texto{
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-img.estatica1{
-    position:absolute;
-    background: white;
+label>img{
+    width: 640px;
+    height: 360px;
+}
+div>div>img{
+    width: 270px;
+    height: 480px;
+}
+/*------------Menu----------*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:0 20px;
+}
+nav>label{
+    background-color: #366B99;
+    color: #E6B567;
+    padding: 5px;
+    cursor: pointer;
+}
+article{
+    display:none;
+}
+input[type="radio"]:nth-of-type(1):checked ~ article:nth-of-type(1),
+input[type="radio"]:nth-of-type(2):checked ~ article:nth-of-type(2),
+input[type="radio"]:nth-of-type(3):checked ~ article:nth-of-type(3),
+input[type="radio"]:nth-of-type(4):checked ~ article:nth-of-type(4),
+input[type="radio"]:nth-of-type(5):checked ~ article:nth-of-type(5) {
+	display: block;
+}
+/*--------EUROPA----------*/
+/*------Primer País-------*/
+.pais1>label>img{
     filter: grayscale(100%);
 }
-img.estatica1:hover{
+.pais1>label>img:hover{
     transition: 1s;
-    opacity: 0;
+    filter: grayscale(0);
 }
-.secundaria1{
+.ciudadesPais1{
     display: none;
 }
-.principal1{
-    display:flex;
+.ciudadesPais1>div>img{
+    filter: grayscale(100%);
 }
-#pais1:checked +.imgs1>.principal1{
-    display:none;
-    animation: ease-out;
+#pais1:checked+label>img{
+    display: none;
 }
-#pais1:checked+.imgs1{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#pais1:checked+.imgs1 > .secundaria1{
+#pais1:checked~.ciudadesPais1{
     display: flex;
 }
-#pais1:checked+.imgs1 > .secundaria1 > img{
-    display:flex;   
-    width: 200px;
-    height: 270px;
-    object-fit: none;
+#pais1:checked~.ciudadesPais1>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
 }
 .contraer1{
-    display:none;
+    display: none;
 }
-
 #pais1:checked~.icono1>label>.expandir1{
     display: none;
 }
 #pais1:checked~.icono1>label>.contraer1{
-    display:flex;
+    display: flex;
+}
+#pais1:checked~.ciudadesPais1>div:hover>div{
+    visibility: visible;
+}
+/*------Segundo País-------*/
+.pais2>label>img{
+    filter: grayscale(100%);
+}
+.pais2>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais2{
+    display: none;
+}
+.ciudadesPais2>div>img{
+    filter: grayscale(100%);
+}
+#pais2:checked+label>img{
+    display: none;
+}
+#pais2:checked~.ciudadesPais2{
+    display: flex;
+}
+#pais2:checked~.ciudadesPais2>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer2{
+    display: none;
+}
+#pais2:checked~.icono2>label>.expandir2{
+    display: none;
+}
+#pais2:checked~.icono2>label>.contraer2{
+    display: flex;
+}
+#pais2:checked~.ciudadesPais2>div:hover>div{
+    visibility: visible;
+}
+/*------Tercer País-------*/
+.pais3>label>img{
+    filter: grayscale(100%);
+}
+.pais3>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais3{
+    display: none;
+}
+.ciudadesPais3>div>img{
+    filter: grayscale(100%);
+}
+#pais3:checked+label>img{
+    display: none;
+}
+#pais3:checked~.ciudadesPais3{
+    display: flex;
+}
+#pais3:checked~.ciudadesPais3>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer3{
+    display: none;
+}
+#pais3:checked~.icono3>label>.expandir3{
+    display: none;
+}
+#pais3:checked~.icono3>label>.contraer3{
+    display: flex;
+}
+#pais3:checked~.ciudadesPais3>div:hover>div{
+    visibility: visible;
+}
+/*------Cuarto País-------*/
+.pais4>label>img{
+    filter: grayscale(100%);
+}
+.pais4>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais4{
+    display: none;
+}
+.ciudadesPais4>div>img{
+    filter: grayscale(100%);
+}
+#pais4:checked+label>img{
+    display: none;
+}
+#pais4:checked~.ciudadesPais4{
+    display: flex;
+}
+#pais4:checked~.ciudadesPais4>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer4{
+    display: none;
+}
+#pais4:checked~.icono4>label>.expandir4{
+    display: none;
+}
+#pais4:checked~.icono4>label>.contraer4{
+    display: flex;
+}
+#pais4:checked~.ciudadesPais4>div:hover>div{
+    visibility: visible;
+}
+/*--------N AMERICA----------*/
+/*------Primer País-------*/
+.pais5>label>img{
+    filter: grayscale(100%);
+}
+.pais5>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais5{
+    display: none;
+}
+.ciudadesPais5>div>img{
+    filter: grayscale(100%);
+}
+#pais5:checked+label>img{
+    display: none;
+}
+#pais5:checked~.ciudadesPais5{
+    display: flex;
+}
+#pais5:checked~.ciudadesPais5>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer5{
+    display: none;
+}
+#pais5:checked~.icono5>label>.expandir5{
+    display: none;
+}
+#pais5:checked~.icono5>label>.contraer5{
+    display: flex;
+}
+#pais5:checked~.ciudadesPais5>div:hover>div{
+    visibility: visible;
+}
+/*------Segundo País-------*/
+.pais6>label>img{
+    filter: grayscale(100%);
+}
+.pais6>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais6{
+    display: none;
+}
+.ciudadesPais6>div>img{
+    filter: grayscale(100%);
+}
+#pais6:checked+label>img{
+    display: none;
+}
+#pais6:checked~.ciudadesPais6{
+    display: flex;
+}
+#pais6:checked~.ciudadesPais6>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer6{
+    display: none;
+}
+#pais6:checked~.icono6>label>.expandir6{
+    display: none;
+}
+#pais6:checked~.icono6>label>.contraer6{
+    display: flex;
+}
+#pais6:checked~.ciudadesPais6>div:hover>div{
+    visibility: visible;
+}
+/*--------S AMERICA----------*/
+/*------Primer País-------*/
+.pais9>label>img{
+    filter: grayscale(100%);
+}
+.pais9>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais9{
+    display: none;
+}
+.ciudadesPais9>div>img{
+    filter: grayscale(100%);
+}
+#pais9:checked+label>img{
+    display: none;
+}
+#pais9:checked~.ciudadesPais9{
+    display: flex;
+}
+#pais9:checked~.ciudadesPais9>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer9{
+    display: none;
+}
+#pais9:checked~.icono9>label>.expandir9{
+    display: none;
+}
+#pais9:checked~.icono9>label>.contraer9{
+    display: flex;
+}
+#pais9:checked~.ciudadesPais9>div:hover>div{
+    visibility: visible;
+}
+/*------Segundo País-------*/
+.pais10>label>img{
+    filter: grayscale(100%);
+}
+.pais10>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais10{
+    display: none;
+}
+.ciudadesPais10>div>img{
+    filter: grayscale(100%);
+}
+#pais10:checked+label>img{
+    display: none;
+}
+#pais10:checked~.ciudadesPais10{
+    display: flex;
+}
+#pais10:checked~.ciudadesPais10>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer10{
+    display: none;
+}
+#pais10:checked~.icono10>label>.expandir10{
+    display: none;
+}
+#pais10:checked~.icono10>label>.contraer10{
+    display: flex;
+}
+#pais10:checked~.ciudadesPais10>div:hover>div{
+    visibility: visible;
+}
+/*------Tercer País-------*/
+.pais11>label>img{
+    filter: grayscale(100%);
+}
+.pais11>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais11{
+    display: none;
+}
+.ciudadesPais11>div>img{
+    filter: grayscale(100%);
+}
+#pais11:checked+label>img{
+    display: none;
+}
+#pais11:checked~.ciudadesPais11{
+    display: flex;
+}
+#pais11:checked~.ciudadesPais11>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer11{
+    display: none;
+}
+#pais11:checked~.icono11>label>.expandir11{
+    display: none;
+}
+#pais11:checked~.icono11>label>.contraer11{
+    display: flex;
+}
+#pais11:checked~.ciudadesPais11>div:hover>div{
+    visibility: visible;
+}
+/*------Cuarto País-------*/
+.pais12>label>img{
+    filter: grayscale(100%);
+}
+.pais12>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais12{
+    display: none;
+}
+.ciudadesPais12>div>img{
+    filter: grayscale(100%);
+}
+#pais12:checked+label>img{
+    display: none;
+}
+#pais12:checked~.ciudadesPais12{
+    display: flex;
+}
+#pais12:checked~.ciudadesPais12>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer12{
+    display: none;
+}
+#pais12:checked~.icono12>label>.expandir12{
+    display: none;
+}
+#pais12:checked~.icono12>label>.contraer12{
+    display: flex;
+}
+#pais12:checked~.ciudadesPais12>div:hover>div{
+    visibility: visible;
+}
+/*--------ASIA----------*/
+/*------Primer País-------*/
+.pais13>label>img{
+    filter: grayscale(100%);
+}
+.pais13>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais13{
+    display: none;
+}
+.ciudadesPais13>div>img{
+    filter: grayscale(100%);
+}
+#pais13:checked+label>img{
+    display: none;
+}
+#pais13:checked~.ciudadesPais13{
+    display: flex;
+}
+#pais13:checked~.ciudadesPais13>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer13{
+    display: none;
+}
+#pais13:checked~.icono13>label>.expandir13{
+    display: none;
+}
+#pais13:checked~.icono13>label>.contraer13{
+    display: flex;
+}
+#pais13:checked~.ciudadesPais13>div:hover>div{
+    visibility: visible;
+}
+/*------Segundo País-------*/
+.pais14>label>img{
+    filter: grayscale(100%);
+}
+.pais14>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais14{
+    display: none;
+}
+.ciudadesPais14>div>img{
+    filter: grayscale(100%);
+}
+#pais14:checked+label>img{
+    display: none;
+}
+#pais14:checked~.ciudadesPais14{
+    display: flex;
+}
+#pais14:checked~.ciudadesPais14>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer14{
+    display: none;
+}
+#pais14:checked~.icono14>label>.expandir14{
+    display: none;
+}
+#pais14:checked~.icono14>label>.contraer14{
+    display: flex;
+}
+#pais14:checked~.ciudadesPais14>div:hover>div{
+    visibility: visible;
+}
+/*------Tercer País-------*/
+.pais15>label>img{
+    filter: grayscale(100%);
+}
+.pais15>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais15{
+    display: none;
+}
+.ciudadesPais15>div>img{
+    filter: grayscale(100%);
+}
+#pais15:checked+label>img{
+    display: none;
+}
+#pais15:checked~.ciudadesPais15{
+    display: flex;
+}
+#pais15:checked~.ciudadesPais15>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer15{
+    display: none;
+}
+#pais15:checked~.icono15>label>.expandir15{
+    display: none;
+}
+#pais15:checked~.icono15>label>.contraer15{
+    display: flex;
+}
+#pais15:checked~.ciudadesPais15>div:hover>div{
+    visibility: visible;
+}
+/*------Cuarto País-------*/
+.pais16>label>img{
+    filter: grayscale(100%);
+}
+.pais16>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais16{
+    display: none;
+}
+.ciudadesPais16>div>img{
+    filter: grayscale(100%);
+}
+#pais16:checked+label>img{
+    display: none;
+}
+#pais16:checked~.ciudadesPais16{
+    display: flex;
+}
+#pais16:checked~.ciudadesPais16>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer16{
+    display: none;
+}
+#pais16:checked~.icono16>label>.expandir16{
+    display: none;
+}
+#pais16:checked~.icono16>label>.contraer16{
+    display: flex;
+}
+#pais16:checked~.ciudadesPais16>div:hover>div{
+    visibility: visible;
+}
+/*--------OCEANIA----------*/
+/*------Primer País-------*/
+.pais17>label>img{
+    filter: grayscale(100%);
+}
+.pais17>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais17{
+    display: none;
+}
+.ciudadesPais17>div>img{
+    filter: grayscale(100%);
+}
+#pais17:checked+label>img{
+    display: none;
+}
+#pais17:checked~.ciudadesPais17{
+    display: flex;
+}
+#pais17:checked~.ciudadesPais17>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer17{
+    display: none;
+}
+#pais17:checked~.icono17>label>.expandir17{
+    display: none;
+}
+#pais17:checked~.icono17>label>.contraer17{
+    display: flex;
+}
+#pais17:checked~.ciudadesPais17>div:hover>div{
+    visibility: visible;
+}
+/*------Segundo País-------*/
+.pais18>label>img{
+    filter: grayscale(100%);
+}
+.pais18>label>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.ciudadesPais18{
+    display: none;
+}
+.ciudadesPais18>div>img{
+    filter: grayscale(100%);
+}
+#pais18:checked+label>img{
+    display: none;
+}
+#pais18:checked~.ciudadesPais18{
+    display: flex;
+}
+#pais18:checked~.ciudadesPais18>div>img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+.contraer18{
+    display: none;
+}
+#pais18:checked~.icono18>label>.expandir18{
+    display: none;
+}
+#pais18:checked~.icono18>label>.contraer18{
+    display: flex;
+}
+#pais18:checked~.ciudadesPais18>div:hover>div{
+    visibility: visible;
 }

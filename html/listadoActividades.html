@@ -7,6 +7,9 @@
     <title>Listado Actividades</title>
     <link rel="stylesheet" href="../css/estilosListadoActividades.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -14,56 +17,1187 @@
 
         </header>
         <section>
+            <nav>
+                <label for="europa">
+                    Europa
+                </label>
+                <label for="nAmerica">
+                    América del norte
+                </label>
+                <label for="sAmerica">
+                    América del sur
+                </label>
+                <label for="asia">
+                    Asia
+                </label>
+                <label for="oceania">
+                    Oceanía
+                </label>
+            </nav>
+
+            <input type="radio" id="europa" name="continente" checked/>
+            <input type="radio" id="nAmerica" name="continente" />
+            <input type="radio" id="sAmerica" name="continente" />
+            <input type="radio" id="asia" name="continente" />
+            <input type="radio" id="oceania" name="continente" />
+
             <article class="europa">
-                <input type="checkbox" id="pais1"/>
-                <div class="imgs1">
-                    <div class="principal1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris1.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris1.gif" />
-                    </div>
-                    <div class="secundaria1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris1.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris1.gif" />
-                    </div>
-                    <div class="secundaria1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris2.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris2.gif" />
-                    </div>
-                    <div class="secundaria1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris3.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris3.gif" />
-                    </div>
-                    <div class="secundaria1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris4.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris4.gif" />
-                    </div>
-                    <div class="secundaria1">
-                        <img class="estatica1" src="../imgs/imgsAtraccionesTuristicas/paris5.png" />
-                        <img src="../imgs/imgsAtraccionesTuristicas/paris5.gif" />
-                    </div>
-                </div>
-                <div class="texto1">
-                    <h3>Francia</h3>
-                </div>
-                <input type="checkbox" id="pais1"/>
-                <div class="icono1">
+                <div class="pais1">
+                    <input type="checkbox" id="pais1"/>
                     <label for="pais1">
-                        <i class="bi bi-chevron-right expandir1"></i>
-                        <i class="bi bi-chevron-left contraer1"></i>
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" alt="Foto de Francia" />
                     </label>
+                    <label for="pais1">
+                        <h3>Francia</h3>
+                    </label>
+                    <div class="ciudadesPais1">
+                        <div class="ciudad1Pais1">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.jpg" alt="Foto de París">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais1">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="Foto de Marseille">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais1">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="Foto de Lyon">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais1">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpg" alt="Foto de Cannes">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais1">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="Foto de Toulouse">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais1"/>
+                    <div class="icono1">
+                        <label for="pais1">
+                            <i class="bi bi-chevron-right expandir1"></i>
+                            <i class="bi bi-chevron-left contraer1"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais2">
+                    <input type="checkbox" id="pais2"/>
+                    <label for="pais2">
+                        <img src="../imgs/imgsAtraccionesTuristicas/alemania.jpg" alt="Foto de Alemania"/>
+                    </label>
+                    <label for="pais2">
+                        <h3>Alemania</h3>
+                    </label> 
+                    <div class="ciudadesPais2">
+                        <div class="ciudad1Pais2">
+                            <img src="../imgs/imgsAtraccionesTuristicas/berlin.jpg" alt="Foto de Berlín">
+                            <div class="texto">
+                                <h4>Berlín</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais2">
+                            <img src="../imgs/imgsAtraccionesTuristicas/frankfurt.jpg" alt="Foto de Frankfurt">
+                            <div class="texto">
+                                <h4>Frankfurt</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais2">
+                            <img src="../imgs/imgsAtraccionesTuristicas/hannover.jpg" alt="Foto de Hannover">
+                            <div class="texto">
+                                <h4>Hannover </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais2">
+                            <img src="../imgs/imgsAtraccionesTuristicas/munich.jpg" alt="Foto de Munich">
+                            <div class="texto">
+                                <h4>Munich</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais2">
+                            <img src="../imgs/imgsAtraccionesTuristicas/hamburgo.jpg" alt="Foto de Hamburgo">
+                            <div class="texto">
+                                <h4>Hamburgo</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais2"/>
+                    <div class="icono2">
+                        <label for="pais2">
+                            <i class="bi bi-chevron-right expandir2"></i>
+                            <i class="bi bi-chevron-left contraer2"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais3">
+                    <input type="checkbox" id="pais3"/>
+                    <label for="pais3">
+                        <img src="../imgs/imgsAtraccionesTuristicas/grecia.jpg" alt="Foto de Grecia" />
+                    </label>
+                    <label for="pais3">
+                        <h3>Grecia</h3>
+                    </label>
+                    <div class="ciudadesPais3">
+                        <div class="ciudad1Pais3">
+                            <img src="../imgs/imgsAtraccionesTuristicas/atenas.jpg" alt="Foto de Atenas">
+                            <div class="texto">
+                                <h4>Atenas</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais3">
+                            <img src="../imgs/imgsAtraccionesTuristicas/preveza.jpg" alt="Foto de Preveza">
+                            <div class="texto">
+                                <h4>Preveza</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais3">
+                            <img src="../imgs/imgsAtraccionesTuristicas/santorini.jpg" alt="Foto de Santorini">
+                            <div class="texto">
+                                <h4>Santorini </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais3">
+                            <img src="../imgs/imgsAtraccionesTuristicas/salonica.jpg" alt="Foto de Salonica">
+                            <div class="texto">
+                                <h4>Salonica</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais3">
+                            <img src="../imgs/imgsAtraccionesTuristicas/patras.jpg" alt="Foto de Patras">
+                            <div class="texto">
+                                <h4>Patras</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais3"/>
+                    <div class="icono3">
+                        <label for="pais3">
+                            <i class="bi bi-chevron-right expandir3"></i>
+                            <i class="bi bi-chevron-left contraer3"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais4">
+                    <input type="checkbox" id="pais4"/>
+                    <label for="pais4">
+                        <img src="../imgs/imgsAtraccionesTuristicas/italia.jpg" alt="Foto de Italia" />
+                    </label>
+                    <label for="pais4">
+                        <h3>Italia</h3>
+                    </label>
+                    <div class="ciudadesPais4">
+                        <div class="ciudad1Pais4">
+                            <img src="../imgs/imgsAtraccionesTuristicas/roma.jpg" alt="Foto de Roma">
+                            <div class="texto">
+                                <h4>Roma</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais4">
+                            <img src="../imgs/imgsAtraccionesTuristicas/pisa.jpg" alt="Foto de Pisa">
+                            <div class="texto">
+                                <h4>Pisa</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais4">
+                            <img src="../imgs/imgsAtraccionesTuristicas/milan.jpg" alt="Foto de Milan">
+                            <div class="texto">
+                                <h4>Milan</h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais4">
+                            <img src="../imgs/imgsAtraccionesTuristicas/florencia.jpg" alt="Foto de Florencia">
+                            <div class="texto">
+                                <h4>Florencia</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais4">
+                            <img src="../imgs/imgsAtraccionesTuristicas/venecia.jpg" alt="Foto de Venecia">
+                            <div class="texto">
+                                <h4>Venecia</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais4"/>
+                    <div class="icono4">
+                        <label for="pais4">
+                            <i class="bi bi-chevron-right expandir4"></i>
+                            <i class="bi bi-chevron-left contraer4"></i>
+                        </label>
+                    </div>
                 </div>
             </article>
             <article class="nAmerica">
-
+                <div class="pais5">
+                    <input type="checkbox" id="pais5"/>
+                    <label for="pais5">
+                        <img src="../imgs/imgsAtraccionesTuristicas/usa.jpg" alt="Foto de Estados Unidos" />
+                    </label>
+                    <label for="pais5">
+                        <h3>Estados Unidos</h3>
+                    </label>
+                    <div class="ciudadesPais5">
+                        <div class="ciudad1Pais5">
+                            <img src="../imgs/imgsAtraccionesTuristicas/washington.jpg" alt="Foto de Washington">
+                            <div class="texto">
+                                <h4>Washington</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais5">
+                            <img src="../imgs/imgsAtraccionesTuristicas/newYork.jpg" alt="Foto de New York">
+                            <div class="texto">
+                                <h4>New York</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais5">
+                            <img src="../imgs/imgsAtraccionesTuristicas/sanFrancisco.jpg" alt="Foto de San Francisco">
+                            <div class="texto">
+                                <h4>San Francisco </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais5">
+                            <img src="../imgs/imgsAtraccionesTuristicas/chicago.jpg" alt="Foto de Chicago">
+                            <div class="texto">
+                                <h4>Chicago</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais5">
+                            <img src="../imgs/imgsAtraccionesTuristicas/losAngeles.jpg" alt="Foto de Los Angeles">
+                            <div class="texto">
+                                <h4>Los Ángeles</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais5"/>
+                    <div class="icono5">
+                        <label for="pais5">
+                            <i class="bi bi-chevron-right expandir5"></i>
+                            <i class="bi bi-chevron-left contraer5"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais6">
+                    <input type="checkbox" id="pais6"/>
+                    <label for="pais6">
+                        <img src="../imgs/imgsAtraccionesTuristicas/canada.jpg" alt="Foto de Canada"/>
+                    </label>
+                    <label for="pais6">
+                        <h3>Canadá</h3>
+                    </label> 
+                    <div class="ciudadesPais6">
+                        <div class="ciudad1Pais6">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toronto.jpg" alt="Foto de Toronto">
+                            <div class="texto">
+                                <h4>Toronto</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais6">
+                            <img src="../imgs/imgsAtraccionesTuristicas/montreal.jpg" alt="Foto de Montreal">
+                            <div class="texto">
+                                <h4>Montreal</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais6">
+                            <img src="../imgs/imgsAtraccionesTuristicas/vancouver.jpg" alt="Foto de Vancouver">
+                            <div class="texto">
+                                <h4>Vancouver </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais6">
+                            <img src="../imgs/imgsAtraccionesTuristicas/quebec.jpg" alt="Foto de Quebec">
+                            <div class="texto">
+                                <h4>Quebec</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais6">
+                            <img src="../imgs/imgsAtraccionesTuristicas/ontario.jpg" alt="Foto de Ontario">
+                            <div class="texto">
+                                <h4>Ontario</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais6"/>
+                    <div class="icono6">
+                        <label for="pais6">
+                            <i class="bi bi-chevron-right expandir6"></i>
+                            <i class="bi bi-chevron-left contraer6"></i>
+                        </label>
+                    </div>
+                </div>
+            
             </article>
+            
             <article class="sAmerica">
-
+                <div class="pais9">
+                    <input type="checkbox" id="pais9"/>
+                    <label for="pais9">
+                        <img src="../imgs/imgsAtraccionesTuristicas/argentina.jpg" alt="Foto de Argentina" />
+                    </label>
+                    <label for="pais9">
+                        <h3>Argentina</h3>
+                    </label>
+                    <div class="ciudadesPais9">
+                        <div class="ciudad1Pais9">
+                            <img src="../imgs/imgsAtraccionesTuristicas/buenosAires.jpg" alt="Foto de Buenos Aires">
+                            <div class="texto">
+                                <h4>Buenos Aires</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais9">
+                            <img src="../imgs/imgsAtraccionesTuristicas/mendoza.jpg" alt="Foto de Mendoza">
+                            <div class="texto">
+                                <h4>Mendoza</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais9"/>
+                    <div class="icono9">
+                        <label for="pais9">
+                            <i class="bi bi-chevron-right expandir9"></i>
+                            <i class="bi bi-chevron-left contraer9"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais10">
+                    <input type="checkbox" id="pais10"/>
+                    <label for="pais10">
+                        <img src="../imgs/imgsAtraccionesTuristicas/brasil.jpg" alt="Foto de Brasil" />
+                    </label>
+                    <label for="pais10">
+                        <h3>Brasil</h3>
+                    </label> 
+                    <div class="ciudadesPais10">
+                        <div class="ciudad1Pais10">
+                            <img src="../imgs/imgsAtraccionesTuristicas/rioDeJaneiro.jpg" alt="Foto de Rio de Janeiro">
+                            <div class="texto">
+                                <h4>Río de Janeiro</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais10">
+                            <img src="../imgs/imgsAtraccionesTuristicas/saoPaolo.jpg" alt="Foto de Sao Paolo">
+                            <div class="texto">
+                                <h4>Sao Paolo</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais10">
+                            <img src="../imgs/imgsAtraccionesTuristicas/amazonas.jpg" alt="Foto del Amazonas">
+                            <div class="texto">
+                                <h4>Amazonas </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais10"/>
+                    <div class="icono10">
+                        <label for="pais10">
+                            <i class="bi bi-chevron-right expandir10"></i>
+                            <i class="bi bi-chevron-left contraer10"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais11">
+                    <input type="checkbox" id="pais11"/>
+                    <label for="pais11">
+                        <img src="../imgs/imgsAtraccionesTuristicas/chile.jpg" alt="Foto de Chile" />
+                    </label>
+                    <label for="pais11">
+                        <h3>Chile</h3>
+                    </label>
+                    <div class="ciudadesPais11">
+                        <div class="ciudad1Pais11">
+                            <img src="../imgs/imgsAtraccionesTuristicas/santiagoChile.jpg" alt="Foto de Santiago de Chile">
+                            <div class="texto">
+                                <h4>Santiago de Chile</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais11">
+                            <img src="../imgs/imgsAtraccionesTuristicas/caboDeHornos.jpg" alt="Foto del cabo de Hornos">
+                            <div class="texto">
+                                <h4>Cabo de Hornos</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais11"/>
+                    <div class="icono11">
+                        <label for="pais11">
+                            <i class="bi bi-chevron-right expandir11"></i>
+                            <i class="bi bi-chevron-left contraer11"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais12">
+                    <input type="checkbox" id="pais12"/>
+                    <label for="pais12">
+                        <img src="../imgs/imgsAtraccionesTuristicas/mexico.jpg" alt="Foto de Mexico" />
+                    </label>
+                    <label for="pais12">
+                        <h3>México</h3>
+                    </label>
+                    <div class="ciudadesPais12">
+                        <div class="ciudad1Pais12">
+                            <img src="../imgs/imgsAtraccionesTuristicas/mexicodf.jpg" alt="Foto de Mexico">
+                            <div class="texto">
+                                <h4>México D.F.</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais12">
+                            <img src="../imgs/imgsAtraccionesTuristicas/chichenItza.jpg" alt="Foto de Chichen Itza">
+                            <div class="texto">
+                                <h4>Chichen Itza</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais12"/>
+                    <div class="icono12">
+                        <label for="pais12">
+                            <i class="bi bi-chevron-right expandir12"></i>
+                            <i class="bi bi-chevron-left contraer12"></i>
+                        </label>
+                    </div>
+                </div>
             </article>
+            
             <article class="asia">
-
+                <div class="pais13">
+                    <input type="checkbox" id="pais13"/>
+                    <label for="pais13">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais13">
+                        <h3>Francia</h3>
+                    </label>
+                    <div class="ciudadesPais13">
+                        <div class="ciudad1Pais13">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais13">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais13">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais13">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais13">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais13"/>
+                    <div class="icono13">
+                        <label for="pais13">
+                            <i class="bi bi-chevron-right expandir13"></i>
+                            <i class="bi bi-chevron-left contraer13"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais14">
+                    <input type="checkbox" id="pais14"/>
+                    <label for="pais14">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais14">
+                        <h3>Alemania</h3>
+                    </label> 
+                    <div class="ciudadesPais14">
+                        <div class="ciudad1Pais14">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais14">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais14">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais14">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais14">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais14"/>
+                    <div class="icono14">
+                        <label for="pais14">
+                            <i class="bi bi-chevron-right expandir14"></i>
+                            <i class="bi bi-chevron-left contraer14"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais15">
+                    <input type="checkbox" id="pais15"/>
+                    <label for="pais15">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais15">
+                        <h3>Grecia</h3>
+                    </label>
+                    <div class="ciudadesPais15">
+                        <div class="ciudad1Pais15">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais15">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais15">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais15">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais15">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais15"/>
+                    <div class="icono15">
+                        <label for="pais15">
+                            <i class="bi bi-chevron-right expandir15"></i>
+                            <i class="bi bi-chevron-left contraer15"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais16">
+                    <input type="checkbox" id="pais16"/>
+                    <label for="pais16">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais16">
+                        <h3>Italia</h3>
+                    </label>
+                    <div class="ciudadesPais16">
+                        <div class="ciudad1Pais16">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais16">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais16">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais16">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais16">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais16"/>
+                    <div class="icono16">
+                        <label for="pais16">
+                            <i class="bi bi-chevron-right expandir16"></i>
+                            <i class="bi bi-chevron-left contraer16"></i>
+                        </label>
+                    </div>
+                </div>
             </article>
+            
             <article class="oceania">
-
+                <div class="pais17">
+                    <input type="checkbox" id="pais17"/>
+                    <label for="pais17">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais17">
+                        <h3>Francia</h3>
+                    </label>
+                    <div class="ciudadesPais17">
+                        <div class="ciudad1Pais17">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais17">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais17">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais17">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais17">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais17"/>
+                    <div class="icono17">
+                        <label for="pais17">
+                            <i class="bi bi-chevron-right expandir17"></i>
+                            <i class="bi bi-chevron-left contraer17"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="pais18">
+                    <input type="checkbox" id="pais18"/>
+                    <label for="pais18">
+                        <img src="../imgs/imgsAtraccionesTuristicas/francia.jpg" />
+                    </label>
+                    <label for="pais18">
+                        <h3>Alemania</h3>
+                    </label> 
+                    <div class="ciudadesPais18">
+                        <div class="ciudad1Pais18">
+                            <img src="../imgs/imgsAtraccionesTuristicas/paris.png" alt="">
+                            <div class="texto">
+                                <h4>París</h4>
+                                <ul>
+                                    <li>138 Tours</li>
+                                    <li>31 Actividades</li>
+                                    <li>16 Lugares de interés</li>
+                                    <li>10 Museos</li>
+                                    <li>4 Atracciones turísticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad2Pais18">
+                            <img src="../imgs/imgsAtraccionesTuristicas/marseille.jpg" alt="">
+                            <div class="texto">
+                                <h4>Marseille</h4>
+                                <ul>
+                                    <li>42 Tours</li>
+                                    <li>8 Actividades</li>
+                                    <li>1 Lugares de interés</li>
+                                    <li>1 Museos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad3Pais18">
+                            <img src="../imgs/imgsAtraccionesTuristicas/lyon.jpg" alt="">
+                            <div class="texto">
+                                <h4>Lyon </h4>
+                                <ul>
+                                    <li>21 Tours</li>
+                                    <li>1 Actividades</li>
+                                    <li>1 Museos</li>
+                                    <li>1 Traslados y servicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad4Pais18">
+                            <img src="../imgs/imgsAtraccionesTuristicas/cannes.jpeg" alt="">
+                            <div class="texto">
+                                <h4>Cannes</h4>
+                                <ul>
+                                    <li>97 Tours</li>
+                                    <li>14 Actividades</li>
+                                    <li>3 Alquileres</li>
+                                    <li>1 Atracción turística</li>
+                                    <li>1 Museo</li>
+                                    <li>1 Traslado y servicio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ciudad5Pais18">
+                            <img src="../imgs/imgsAtraccionesTuristicas/toulouse.jpg" alt="">
+                            <div class="texto">
+                                <h4>Toulouse</h4>
+                                <ul>
+                                    <li>7 Tours</li>
+                                    <li>3 Actividades</li>   
+                                    <li>1 Museo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="pais18"/>
+                    <div class="icono18">
+                        <label for="pais18">
+                            <i class="bi bi-chevron-right expandir18"></i>
+                            <i class="bi bi-chevron-left contraer18"></i>
+                        </label>
+                    </div>
+                </div>
+                
             </article>
         </section>
         <footer>
